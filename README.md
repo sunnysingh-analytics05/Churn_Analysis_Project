@@ -134,112 +134,6 @@ The common `customerid` field is used to connect the tables and support integrat
 
 ---
 
-## 🔄 Data Methodology
-
-The project follows a structured data analytics workflow.
-
-### Step 1: Data Collection
-
-The customer, subscription, and support tables are loaded from the Excel workbook:
-
-```text
-customer_churn.xlsx
-```
-
-### Step 2: Data Cleaning
-
-The data is prepared for analysis by:
-
-- Checking missing values.
-- Reviewing duplicate records.
-- Standardizing column names and data types.
-- Converting date fields into suitable date formats.
-- Checking categorical values for consistency.
-- Validating customer identifiers and table relationships.
-
-### Step 3: Data Integration
-
-The three tables are connected using `customerid`.
-
-This creates a combined analytical view containing:
-
-- Customer information
-- Subscription information
-- Churn-related fields
-- Customer-support activity
-- Customer satisfaction information
-
-### Step 4: Feature Engineering
-
-Relevant analytical features are created, including:
-
-- **Churn Flag:** Indicates whether a customer has cancelled.
-- **Customer Tenure:** Measures the duration of the customer relationship.
-- **Escalation Indicator:** Identifies whether support activity was escalated.
-- **Customer Aging:** Helps understand the age or duration of a customer relationship.
-- **Churn and Support Metrics:** Supports analysis of customer risk and service experience.
-
-### Step 5: Exploratory Data Analysis
-
-The data is explored to identify patterns involving:
-
-- Churn across subscription and contract types.
-- Churn and monthly charges.
-- Customer tenure and cancellation behavior.
-- Customer satisfaction and support activity.
-- Escalations and churn.
-- Churn scores and observed cancellation status.
-
-### Step 6: Reporting
-
-The findings are communicated through:
-
-- SQL-based analysis
-- Python visualizations
-- Power BI dashboards
-- DAX measures
-- Written business explanations
-
----
-
-## 🔍 Key Findings and Analysis Areas
-
-The current project documentation defines the following analysis areas. Actual numerical findings should be added after the analysis is executed.
-
-### 1. Churn Patterns
-
-Analyze the distribution of churned and active customers to understand the overall cancellation pattern.
-
-### 2. Subscription and Contract Analysis
-
-Compare churn across:
-
-- Subscription types
-- Plan types
-- Contract durations
-- Monthly charges
-
-### 3. Customer Tenure
-
-Investigate whether customers with shorter or longer relationships show different churn patterns.
-
-### 4. Customer-Support Experience
-
-Examine the relationship between:
-
-- Support escalations
-- Customer satisfaction scores
-- Complaint activity
-- Churn behavior
-
-### 5. Churn Score Analysis
-
-Compare the recorded `churn_score` with the observed churn flag to understand how the available churn indicator relates to actual cancellations.
-
-> **Note:** This README does not include measured percentages, correlation values, or ranked risk groups because those results were not provided in the project documentation. Add verified values from the completed analysis to make this section fully results-driven.
-
----
-
 
 ## ▶️ How to Run the Project
 
@@ -339,16 +233,6 @@ The project is designed to produce:
 
 ---
 
-## 📌 Key Files
-
-| File | Description |
-|---|---|
-| `customer_churn.xlsx` | Excel workbook containing the three related data tables |
-| `Business_Challenge.pdf` | One-page description of the business challenge and project plan |
-| `README.md` | Project documentation and setup guide |
-
----
-
 ## 🚀 Future Enhancements
 
 Possible future improvements include:
@@ -363,13 +247,20 @@ Possible future improvements include:
 
 ---
 
-## 👤 Author
+## 📜 License
 
-**Sunny Singh**
+MIT — feel free to fork, star, and use in your portfolio.
 
+## 👨‍💻 About the Author
+Hey, I’m Sunny Singh, a Data Analyst.
+I break down complex data topics into simple, practical content that actually helps you land a job.
+
+
+- 💼 LinkedIn: [Sunny Singh](https://www.linkedin.com/in/sunnysingh007/)
 - 📧 Email: sunny1290singh@gmail.com
-- 🔗 LinkedIn: [Sunny Singh](https://www.linkedin.com/in/sunnysingh007)
 - 💻 GitHub: [sunnysingh-analytics05](https://github.com/sunnysingh-analytics05)
+- Let’s connect professionally and grow your data career
 
 
-Add a license here if you plan to distribute the project publicly.
+**💡 Thanks for checking out the project! Your support means a lot! Feel free to star ⭐ this repo or share it with someone learning Data Analytics.🚀**
+
