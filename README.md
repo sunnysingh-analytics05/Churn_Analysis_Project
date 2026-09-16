@@ -42,7 +42,7 @@ The main objectives of this project are to:
 
 **Database:** `customer_churn`  
 **Number of Customers:** 1,300  
-**Source File:** `customer_churn.xlsx`
+**Source File:** `customer_churn_raw_data.xlsx`
 
 The dataset contains three related tables. Each table is connected through the common field `customerid`.
 
@@ -112,7 +112,6 @@ The common `customerid` field is used to connect the tables and support integrat
 - **Pandas** — data manipulation and analysis
 - **NumPy** — numerical operations and feature preparation
 - **Matplotlib** — data visualization
-- **Seaborn** — statistical visualization
 - **sqlalchemy** — database connectivity and SQL-based analysis
 
 ### Data Preparation
