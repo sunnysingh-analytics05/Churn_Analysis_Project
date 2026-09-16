@@ -145,16 +145,14 @@ Install the following before running the project:
 - Git
 - Power BI Desktop, if you want to open the dashboard
 
-### 1. Clone the Repository
+1. **Clone the Repository**
 
 ```bash
-git clone <your-repository-url>
-cd customer-churn-analysis
+   github clone https://github.com/sunnyData554-eng/Churn_Analysis_Project 
+   cd Churn_Analysis_Project
 ```
 
-Replace `<your-repository-url>` with the actual URL of your GitHub repository.
-
-### 2. Create a Virtual Environment
+2. **Create a Virtual Environment**
 
 On Windows:
 
@@ -169,52 +167,35 @@ On macOS or Linux:
 python3 -m venv venv
 source venv/bin/activate
 ```
-
-### 3. Install Required Libraries
-
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
-
-If your project uses additional database or SQL libraries, install them as required by the analysis code.
-
-### 4. Add the Dataset
-
-Place the Excel file in the project root directory:
-
-```text
-customer_churn.xlsx
-```
-
-Make sure the file name and path match the path used in the Python or notebook code.
-
-### 5. Run the Notebook
-
-Start Jupyter Notebook:
+3. **Install Required Libraries**
 
 ```bash
-jupyter notebook
+pip install pandas numpy matplotlib sqlalchemy 
 ```
 
-Then open the analysis notebook from the `notebooks` folder and run the cells in order.
+4. **Open Churn_Analysis.ipynb notebook**
 
-### 6. Run the Python Script
+    This file contains:
+      - Data Import
+      - Data cleaning
+      - Data Integration
+      - Feature Engineering
+      - Exploratory Data Analysis
+ 
+  
+5. **Open the Power BI Dashboard**
 
-If the project includes a Python script, execute it from the project root:
+      - Open Power BI Desktop.
+      - Open the `customer_churn_dashboard.pbix` dashboard file.
+      - Confirm that the data source path is correct.
+      - Refresh the data if required.
+      - Review the report pages, KPIs, charts, and DAX measures.
+  
+6. **Create Project Report and Presentation**
 
-```bash
-python python/data_analysis.py
-```
+      - Create project report
+      - Build presentation deck using AI Tools
 
-Update the command if your script is stored in a different location.
-
-### 7. Open the Power BI Dashboard
-
-1. Open Power BI Desktop.
-2. Open the `.pbix` dashboard file.
-3. Confirm that the data source path is correct.
-4. Refresh the data if required.
-5. Review the report pages, KPIs, charts, and DAX measures.
 
 ---
 
